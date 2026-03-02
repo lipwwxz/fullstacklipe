@@ -23,7 +23,7 @@ Exercícios e aplicações desenvolvidas durante meus estudos
 
 ## 📫 Contato
 - GitHub: https://github.com/lipwwxz
-- Email: seuemail@email.com
+- Email: fellipetomaz947@gmail.com
 
 ---
 
