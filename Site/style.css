@@ -1,5 +1,5 @@
 body {
-    background-color: #f2f2f2;
+    background-color: #545e4e;
     font-family: Arial, sans-serif;
 }
 
@@ -12,5 +12,17 @@ p {
 }
 h2 {
     font-size: 30px;
-    color: blue;
+    color: white;
+    background-color: wheat;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+button {
+    padding: 7px 20px;
+    background-color:wheat;
+    font-size: 20px;
+    color: brown;
+    border-radius: 20px;
+    border: 2px solid black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
