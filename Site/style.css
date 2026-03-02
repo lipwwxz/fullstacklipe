@@ -4,25 +4,33 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: white;
 }
 
 p {
     color: #555;
 }
+
 h2 {
     font-size: 30px;
-    color: white;
-    background-color: wheat;
+    color: wheat;
     font-style: italic;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 button {
     padding: 7px 20px;
-    background-color:wheat;
+    background-color: wheat;
     font-size: 20px;
     color: brown;
     border-radius: 20px;
     border: 2px solid black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+input {
+    border-radius: 5px;
+    border: 5px;
+    color: wheat;
 }
