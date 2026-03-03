@@ -5,6 +5,7 @@ body {
 
 h1 {
     color: white;
+
 }
 
 p {
@@ -18,19 +19,35 @@ h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-button {
-    padding: 7px 20px;
-    background-color: wheat;
-    font-size: 20px;
-    color: brown;
-    border-radius: 20px;
-    border: 2px solid black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+body {
+    font-family: Arial, sans-serif;
 }
 
-input {
-    border-radius: 5px;
-    border: 5px;
-    color: wheat;
+/* Esconde o submenu */
+.submenu {
+    display: none;
+    margin-top: 5px;
+    flex-direction: column;
+    width: 80px;
+}
+
+/* Mostra quando passa o mouse na div toda */
+.menu:hover .submenu {
+    display: flex;
+}
+
+/* Estilo dos botões */
+button {
+    padding: 8px 10px;
+    margin: 3px 0;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 11px;
+    text-align: center;
+}
+
+.botao-principal {
+    background-color: darkgreen;
 }
