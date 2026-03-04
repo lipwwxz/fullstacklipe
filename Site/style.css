@@ -1,5 +1,6 @@
+
 body {
-    background-color: #545e4e;
+    background-color: #ffffff;
     font-family: Arial, sans-serif;
 }
 
@@ -14,40 +15,105 @@ p {
 
 h2 {
     font-size: 30px;
-    color: wheat;
-    font-style: italic;
+    color: rgb(34, 34, 34);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 
 body {
     font-family: Arial, sans-serif;
 }
 
-/* Esconde o submenu */
-.submenu {
-    display: none;
-    margin-top: 5px;
-    flex-direction: column;
-    width: 80px;
-}
+/*Ajusta posição dos botões principais, ajusta espaço entre eles, distnacia da borda*/
 
-/* Mostra quando passa o mouse na div toda */
-.menu:hover .submenu {
+.menu-bar {
     display: flex;
+    justify-content: flex-start;
+    gap: 30px; 
+    padding-left: 40px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
-
-/* Estilo dos botões */
-button {
-    padding: 8px 10px;
-    margin: 3px 0;
-    background-color: green;
-    color: white;
+/*Controle de espaço ao redor dos botoes principais*/
+.menu {
+    position: relative;
+    display: flex;
+    margin: 10px;
+    border-radius: 10px;
     border: none;
-    cursor: pointer;
-    font-size: 11px;
-    text-align: center;
+    box-shadow: 10px black;
+    
+}
+/*esconde o submenu*/
+.submenu {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    
+}
+/*controla o submenu*/
+.menu:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 .botao-principal {
-    background-color: darkgreen;
+    display: flex;
+    gap: 10px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: rgb(75, 125, 235);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.botao-submenu {
+    display: flex;
+    border-radius: 5px;
+    padding: 8px 10px;
+    background-color: rgb(75, 125, 235);
+    color: white;
+    border: none;
+    margin: 3px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+.botao-submenu:hover {
+    background-color: rgb(75, 125, 235);
+    color: white;
+    
+}
+.menu:hover {
+    transform: scale(1.08);
+    background-color: rgb(75, 125, 235);
+    color: white;
+    
+}
+
+
+/*colocar os botões a direita da tela, controla o espaço entre eles e define a distancia do topo*/
+.menu-superior {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 30px; 
+    margin-top: 1px; 
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.botao-submenu:hover {
+    transform: scale(1.1);
 }
